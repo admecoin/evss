@@ -1,0 +1,78 @@
+
+/* Overrides bootstrap table class */
+.footer {
+	display: flex;
+	background: rgba(0, 150, 127, 0.54);
+    	border: 1px solid #00ae94;	bottom: 0;
+	flex-wrap: wrap;
+	color:#fff;
+	font-size: .8em;
+	justify-content: space-around;
+	/* Negative used to compensate for content padding */
+   	 margin: .2em 0em;
+	padding: 0 10px;
+
+
+    &__block {
+    	display: flex;
+    	align-items: flex-start;
+    	flex-wrap: wrap;
+    	margin: 1em 0;
+    }
+
+	&__logo {
+		display: inline-block;
+		height: 60px;
+		margin-right: 1em;
+	}
+
+	&__data-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	&__data-block {
+		display: flex;
+		flex-direction: column;
+		margin: 0 1em;
+	}
+
+	&__data-title {
+		text-transform: uppercase;
+	}
+
+	&__legal {
+		font-size: .9em;
+		line-height: 2;
+	}
+
+	&__social-title {
+		margin-bottom: .5em;
+		text-transform: uppercase;
+		width: 100%;
+	}
+
+	&__social-media-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__social-media-icon {
+		color: $white;
+		font-size: 2em;
+		margin-right: .5em;
+		text-align: center;
+
+		&:hover,
+		&:focus {
+			color: initial;
+		}
+
+	}
+
+	@include media-breakpoint-up(md) {
+		/* position: fixed; */
+	}
+
+}
